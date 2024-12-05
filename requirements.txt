@@ -1,7 +1,7 @@
 Flask
 flask-cors
 numpy
-sklearn
+scikit-learn
 sentence-transformers
 rapidfuzz
 python-dotenv
