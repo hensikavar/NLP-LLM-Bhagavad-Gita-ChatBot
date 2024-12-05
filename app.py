@@ -2,7 +2,7 @@ import random
 from flask import Flask, request, jsonify
 import json
 from flask_cors import CORS
-from Backend.Eleboration import generate_elaboration
+from Eleboration import generate_elaboration
 from rapidfuzz import process
 import numpy as np
 from sklearn.feature_extraction.text import TfidfVectorizer
