@@ -10,8 +10,16 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
 # Load data
-with open('./alldata.csv', "r", encoding="utf-8") as f:
-    verses = json.load(f)
+# with open('./alldata.csv', "r", encoding="utf-8") as f:
+#     verses = json.load(f)
+data_url = "https://vercel.com/hensikavar-gmailcoms-projects/alldata.csv"  # Replace with your actual URL
+
+response = requests.get(data_url)
+if response.status_code == 200:
+    # Assuming the CSV is structured as JSON or can be converted to JSON
+    verses = response.json()  # If data is in JSON format
+else:
+    verses = []
 
 # Preprocess verses
 translations = [verse['translation'] for verse in verses]
@@ -157,6 +165,7 @@ def get_response():
     }
 
     return jsonify(response)
+
 
 if __name__ == '__main__':
     app.run()
