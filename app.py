@@ -10,7 +10,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sentence_transformers import SentenceTransformer
 
 # Load data
-with open('./alldata.json', "r", encoding="utf-8") as f:
+with open('./alldata.csv', "r", encoding="utf-8") as f:
     verses = json.load(f)
 
 # Preprocess verses
@@ -159,4 +159,4 @@ def get_response():
     return jsonify(response)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
