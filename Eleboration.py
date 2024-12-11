@@ -36,7 +36,7 @@ def generate_elaboration(user_query, verse, translation, explanation):
     prompt = f"""
     You are a spiritual guide with profound knowledge of the Bhagavad Gita, providing clear and actionable insights. 
     Your role is to interpret the given verse and explain how it addresses the user's query in a practical, structured, and concise manner.
-    Ensure the output is organized with bold headings and clear, actionable advice.Also don't provide every thing is one paragraph there must be padding above every heading.
+     Ensure the response is no more than 300 tokens,with bold headings and clear, actionable advice.Also don't provide every thing is one paragraph there must be padding above every heading.
 
     User Query: {user_query}
     Verse: {verse}
@@ -57,7 +57,7 @@ def generate_elaboration(user_query, verse, translation, explanation):
     - Provide clear suggestions for meditation, mindfulness, discipline, or attitude shifts that align with the verse's message.
     """
 
-    max_token_limit = 267
+    max_token_limit = 300
     client = get_client()
     
     try:

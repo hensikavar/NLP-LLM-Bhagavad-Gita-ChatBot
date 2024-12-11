@@ -45,10 +45,10 @@ friendly_responses = {
         "Just here, ready to share wisdom! What life challenge or question would you like guidance on today?",
         "I’m here to help you discover actionable insights from the Gita. What would you like to know?"
     ],
-    "tell me something": [
-        "Did you know the Bhagavad Gita emphasizes inner peace and duty (dharma) as keys to a fulfilled life? Let me know if you'd like to explore more!",
-        "Here's something to ponder: The Gita teaches that true success lies in effort, not in the results. How can I assist you further with this wisdom?"
-    ],
+    # "tell me something": [
+    #     "Did you know the Bhagavad Gita emphasizes inner peace and duty (dharma) as keys to a fulfilled life? Let me know if you'd like to explore more!",
+    #     "Here's something to ponder: The Gita teaches that true success lies in effort, not in the results. How can I assist you further with this wisdom?"
+    # ],
     "repeated casual queries": [
         "It’s always good to connect! If you have a question about life or need guidance, let me know how I can help!",
         "I’m here to help you reflect on life’s deeper questions. What’s on your mind today?"
@@ -60,6 +60,10 @@ friendly_responses = {
     "good afternoon": [
         "Good afternoon! How can I help you today with insights from the Bhagavad Gita?",
         "Good afternoon! Let me know if you have any questions about the teachings of the Gita."
+    ],
+    "good evening": [
+        "Good evening! How can I help you today with insights from the Bhagavad Gita?",
+        "Good evening! Let me know if you have any questions about the teachings of the Gita."
     ],
     "good night": [
         "Good night! May peace and wisdom from the Bhagavad Gita guide you in your dreams.",
